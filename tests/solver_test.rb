@@ -9,10 +9,6 @@ class SolverTest < MiniTest::Test
       MinimumPriorityQueue.expects(:new).times(2).returns(stub(:insert => true))
       Solver.new(Board.new([[0,1,3],[4,2,5],[7,8,6]]), :manhattan)
     end
-
-    should "insert a node and its twin node into two queues" do
-      #PENDING
-    end
   end
 
   context "#is_solvable?" do
@@ -68,6 +64,8 @@ class SolverTest < MiniTest::Test
   end
 
   context "#solve" do
-    #PENDING
+    should "solve the puzzle" do
+      skip("Solve is too complicated to write at present.")
+    end
   end
 end
