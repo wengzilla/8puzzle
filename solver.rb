@@ -52,8 +52,3 @@ class Solver
     end until (current_node.is_goal? || current_twin_node.is_goal?)
   end
 end
-
-# s = Solver.new(Board.new([[0,1,3],[4,2,5],[7,8,6]]), :manhattan)
-# s = Solver.new(Board.new([[1,2,3],[4,5,6],[8,7,0]]), :hamming)
-# s = Solver.new(Board.new([[5,4,3,8],[9,2,6,1],[0,13,14,7],[15,11,10,12]]), :manhattan)
-# puts s.solution
